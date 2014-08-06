@@ -1,1 +1,1 @@
-This is my template site.
+This is the readme for the ruby tutorial they told me to make
