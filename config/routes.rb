@@ -1,4 +1,11 @@
 TemplateSite::Application.routes.draw do
+  root 'pages#Homepage'
+  get "pages/Homepage"
+  get "pages/Page1"
+  get "pages/Page2"
+  get "pages/Page3"
+  get "pages/Page4"
+  get "pages/Page5"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
