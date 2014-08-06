@@ -2,7 +2,7 @@ module ApplicationHelper
 
 
 def full_title(page_title)
-	base_title = "Template Site"
+	base_title = "Ruby Tutorial"
 
 	
 
