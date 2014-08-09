@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+$grayMediumLight: #eaeaea;
+$myblue: #0074D9;
+$myolive: #000000;
+
 #logo{
 	
 	float: left;
@@ -45,18 +49,29 @@ h2 {
 	color: #fff;
 }
 
+
+
+
+
 #mytest{
-color: #F012BE;
+color: myblue;
 	
+
+
+
 
 }
 
 #mytest:hover{
 	
-color: #2ECC40;
+color: myolive;
 
 
 }
+
+
+
+
 
 
 p{
@@ -95,4 +110,38 @@ textarea{
 
 .center h1 {
 	margin-bottom: 10px;
+}
+
+
+footer{
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid $grayMediumLight;
+	color: $grayLight;
+
+
+a{
+	color: $gray;
+	
+	&:hover {
+color: $grayDarker;
+
+
+	}
+}
+
+small{
+	float:left;
+}
+
+ul{
+	float: right;
+	list-style: none;
+	li{
+	float: left;
+	margin-left: 10px;
+	}
+}
+
+
 }
