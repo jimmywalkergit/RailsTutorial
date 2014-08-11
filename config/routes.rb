@@ -1,11 +1,5 @@
 TemplateSite::Application.routes.draw do
   root 'pages#Homepage'
-  get "pages/Homepage"
-  get "pages/Page1"
-  get "pages/Page2"
-  get "pages/Page3"
-  get "pages/Page4"
-  get "pages/Page5"
 
   match '/Homepage', to: 'pages#Homepage', via: 'get'
   match '/page1', to: 'pages#Page1', via: 'get'
