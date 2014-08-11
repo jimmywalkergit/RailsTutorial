@@ -1,5 +1,10 @@
 TemplateSite::Application.routes.draw do
+  get "tutpages/Help"
+  get "tutpages/About"
+  get "tutpages/Contact"
   root 'pages#Homepage'
+
+
 
   match '/Homepage', to: 'pages#Homepage', via: 'get'
   match '/page1', to: 'pages#Page1', via: 'get'
@@ -7,6 +12,12 @@ TemplateSite::Application.routes.draw do
   match '/page3', to: 'pages#Page3', via: 'get'
   match '/page4', to: 'pages#Page4', via: 'get'
   match '/page5', to: 'pages#Page5', via: 'get'
+  match '/Help', to: 'tutpages#Help', via: 'get'
+  match '/Contact', to: 'tutpages#Contact', via: 'get'
+  match '/About', to: 'tutpages#About', via: 'get'
+
+  
+end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -62,4 +73,4 @@ TemplateSite::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+

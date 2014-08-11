@@ -1,12 +1,13 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
 	<div class="navbar-inner">
 		<div class"container">
-			<%= link_to "Template Site", '/pages/Homepage', id: "logo" %>
+			<%= link_to "Template Site", root_path, id: "logo" %>
 
 			<nav>
 				<ul class="nav pull-right">
 				
 				<li><%= link_to "Home",  root_path %></li>
+				<li><%= link_to "About", 'tutpages/About'%></li>
 				<li><%= link_to "Page1", page1_path %></li>
 				<li><%= link_to "Page2", page2_path %></li>
 				<li><%= link_to "Page3", page3_path %></li>

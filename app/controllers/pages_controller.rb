@@ -17,5 +17,13 @@ class PagesController < ApplicationController
   def Page5
   end
 
+def Help
+end
+
+def Contact
+  end
+
+  def About
+  end
   
 end
