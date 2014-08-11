@@ -1,34 +1,40 @@
 @import "bootstrap";
 
+/* Variables */
+
 $grayMediumLight: #eaeaea;
-$myblue: #0074D9;
-$myolive: #000000;
+$grayLight: #eaeaea;
+$grayDarker: #eaeaea;
 
-#logo{
-	
-	float: left;
-	margin-right: 10px;
-	font-size: 1.7em;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-	padding-top: 9px;
-	font-weight: bold;
-	line-height: 1;
+/* Universal Settings */
+
+html{
+	overflow-y: scroll;
 }
 
-#logo:hover{
-	color: #7FDBFF;
-	text-decoration: none;
-
+body{
+	padding-top: 60px;
 }
 
+section{
+	overflow: auto;
+}
 
-/* start  text */
+textarea{
+	resize: vertical;
+}
+
+.center{
+	text-align: center;
+	h1{
+		margin-bottom: 10px;
+	}
+}
+
+/*Type Stuff*/
 
 h1, h2, h3, h4, h5, h6{
 	line-height: 1;
-
 }
 
 h1{
@@ -38,110 +44,77 @@ h1{
 	text-align: center;
 }
 
+h2{
 
-h2 {
-	
-	font-size: 1.2em;
-	letter-spacing: -1px;
-	margin-bottom: 30px;
-	text-align: center;
-	font-weight: normal;
-	color: #fff;
-}
-
-
-
-
-
-#mytest{
-color: myblue;
-	
-
-
-
+font-size: 1.2em;
+letter-spacing: -1px;
+margin-bottom: 30px;
+text-align: center;
+font-weight: normal;
+color: $grayLight;
 
 }
 
-#mytest:hover{
-	
-color: myolive;
+p {
+font-size: 1.1em;
+line-height: 1.7em;
+}
 
+/* Header Stuff */
+
+#logo{
+
+float: left;
+margin-right:10px;
+font-size: 1.7em;
+color: white;
+text-transform: uppercase;
+letter-spacing: -1px;
+padding-top: 9px;
+font-weight: bold;
+line-height: 1;
+
+&:hover{
+color:white;
+text-decoration: none;
 
 }
 
-
-
-
-
-
-p{
-	font-size: 1.1em;
-	line-height: 1.7em;
 }
 
-
-/*end text*/
-
-
-html{
-	
-	overflow-y: scroll;
-}
-
-body{
-	padding-top: 60px;
-
-}
-
-section{
-	
-	overflow:auto;
-}
-
-textarea{
-	
-	resize: vertical;
-}
-
-.center{
-	
-	text-align: center;
-}
-
-.center h1 {
-	margin-bottom: 10px;
-}
+/*Footer Stuff */
 
 
 footer{
+
 	margin-top: 45px;
 	padding-top: 5px;
-	border-top: 1px solid $grayMediumLight;
-	color: $grayLight;
-
+	border-top: 1px solid;
+	color: #eaeaea;
 
 a{
 	color: $gray;
-	
-	&:hover {
-color: $grayDarker;
+	&:hover{
+	color: #eaeaea;
 
 
 	}
 }
+
 
 small{
 	float:left;
 }
 
 ul{
-	float: right;
+	float:right;
 	list-style: none;
+
 	li{
-	float: left;
-	margin-left: 10px;
+		float:left;
+		margin-left: 10px;
 	}
 }
 
-
 }
+
