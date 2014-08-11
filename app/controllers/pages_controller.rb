@@ -16,4 +16,6 @@ class PagesController < ApplicationController
 
   def Page5
   end
+
+  
 end

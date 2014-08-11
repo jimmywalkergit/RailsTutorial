@@ -6,6 +6,14 @@ TemplateSite::Application.routes.draw do
   get "pages/Page3"
   get "pages/Page4"
   get "pages/Page5"
+
+  match '/Homepage', to: 'pages#Homepage', via: 'get'
+  match '/page1', to: 'pages#Page1', via: 'get'
+  match '/page2', to: 'pages#Page2', via: 'get'
+  match '/page3', to: 'pages#Page3', via: 'get'
+  match '/page4', to: 'pages#Page4', via: 'get'
+  match '/page5', to: 'pages#Page5', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
