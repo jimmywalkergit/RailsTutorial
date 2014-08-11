@@ -1,20 +1,21 @@
 TemplateSite::Application.routes.draw do
-  get "tutpages/Help"
-  get "tutpages/About"
-  get "tutpages/Contact"
+ 
   root 'pages#Homepage'
 
 
+  match '/Help', to: 'tutpages#Help', via: 'get'
+  match '/about', to: 'tutpages#About', via: 'get'
+  match '/help', to: 'tutpages#Help', via: 'get'
+  match '/contact', to: 'tutpages#Contact', via: 'get'
 
-  match '/Homepage', to: 'pages#Homepage', via: 'get'
+
+
   match '/page1', to: 'pages#Page1', via: 'get'
   match '/page2', to: 'pages#Page2', via: 'get'
   match '/page3', to: 'pages#Page3', via: 'get'
   match '/page4', to: 'pages#Page4', via: 'get'
   match '/page5', to: 'pages#Page5', via: 'get'
-  match '/Help', to: 'tutpages#Help', via: 'get'
-  match '/Contact', to: 'tutpages#Contact', via: 'get'
-  match '/About', to: 'tutpages#About', via: 'get'
+
 
   
 end

@@ -1,8 +1,11 @@
 class TutpagesController < ApplicationController
+  def About
+  end
+
   def Help
   end
 
-  def About
+  def Signin
   end
 
   def Contact
