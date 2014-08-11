@@ -1,5 +1,6 @@
 TemplateSite::Application.routes.draw do
  
+  get "users/new"
   root 'pages#Homepage'
 
 
@@ -7,7 +8,7 @@ TemplateSite::Application.routes.draw do
   match '/about', to: 'tutpages#About', via: 'get'
   match '/help', to: 'tutpages#Help', via: 'get'
   match '/contact', to: 'tutpages#Contact', via: 'get'
-
+  match '/signup', to: 'users#new', via: 'get'
 
 
   match '/page1', to: 'pages#Page1', via: 'get'
